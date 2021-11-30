@@ -1,0 +1,100 @@
+:root {
+  --primary: blue;
+  --secondary: orange;
+  --dark: rgb(51, 51, 51);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+#page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-header .right {
+  display: flex;
+  align-items: center;
+}
+
+/* NAV */
+#page-nav {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+#page-nav a {
+  margin: 10px 0;
+}
+
+/* SHOWCASE */
+#showcase {
+  background-color: rebeccapurple;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+}
+
+/* CONTACT US */
+#contact-us {
+  background-color: var(--primary);
+  text-align: center;
+}
+
+#contact-us form {
+  padding: 10px;
+}
+
+/* BOXES */
+#boxes .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ABOUT */
+#about {
+  background-color: var(--dark);
+  color: white;
+}
+#about .container {
+  display: flex;
+  padding: 10px 0;
+}
+
+#about .left,
+#about .right {
+  width: 50%;
+}
+
+#about .left {
+  padding-right: 20px;
+}
+
+/* REVIEWS */
+
+/* FOOTER */
+footer {
+  background-color: var(--primary);
+}
