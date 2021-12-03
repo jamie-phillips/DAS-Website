@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>DAS Plumbing & Heating: Heating Engineer | Eastbourne</title>
   </head>
@@ -11,27 +17,31 @@
     <header id="page-header">
       <div class="container">
         <div class="left">
-          <img src="logo-temp.jpeg" alt="" width="300" />
+          <img src="img/logo-temp.jpeg" alt="" width="300" />
         </div>
         <div class="right">
-          <div class="text-container">
-            <p>MOBILE: 07843 425796</p>
-            <p>CALL: 01323655320</p>
-          </div>
-          <img src="gas-safe.jpg" alt="" width="150" />
+          <address>
+            <a href="tel:07843425796">MOBILE: 07843 425796</a>
+            <p></p>
+            <a href="tel:01323655320">CALL: 01323 655320</a>
+          </address>
+          <img src="img/gas-safe.jpg" alt="" width="150" />
         </div>
       </div>
     </header>
 
     <nav id="page-nav">
-      <a href="#">Plumbing</a>
-      <a href="#">Heating</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Plumbing</a></li>
+        <li><a href="#">Heating</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
 
     <section id="showcase">
-      <div class="container">
+      <div class="container-small">
         <h1>Plumber and Heating Engineer in Eastbourne</h1>
         <p>
           DAS Plumbing & Heating has been established for 15+ years working in
@@ -44,7 +54,9 @@
 
     <section id="contact-us">
       <form>
-        <label for="contact-button">For more information:</label>
+        <label for="contact-button"
+          >For further information or if you need an estimate please:</label
+        >
         <input type="button" value="Contact Us" />
       </form>
     </section>
@@ -52,7 +64,7 @@
     <section id="boxes">
       <div class="container">
         <div class="box">
-          <img src="" alt="" />
+          <img src="/img/plumbing.png" alt="" width="" />
           <h2>Plumbing</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -61,7 +73,7 @@
           </p>
         </div>
         <div class="box">
-          <img src="" alt="" />
+          <img src="/img/water-boiler.png" alt="" />
           <h2>Heating</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -70,7 +82,7 @@
           </p>
         </div>
         <div class="box">
-          <img src="" alt="" />
+          <img src="/img/kitchen.png" alt="" />
           <h2>Kitchens & Bathrooms</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
