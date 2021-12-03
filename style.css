@@ -1,6 +1,7 @@
 :root {
   --primary: rgb(26, 26, 122);
-  --secondary: rgb(255, 115, 0);
+  --secondary: rgb(224, 101, 0);
+  --secondary-darker: rgb(253, 120, 11);
   --dark: rgb(51, 51, 51);
   --light-text: rgb(240, 240, 240);
   --dark-text: rgb(0, 0, 0);
@@ -49,6 +50,11 @@ button {
   cursor: pointer;
 }
 
+input[type="button"]:hover,
+button:hover {
+  background-color: var(--secondary-darker);
+}
+
 a {
   font-style: normal;
   text-decoration: none;
@@ -57,6 +63,30 @@ a {
 h1 {
   font-size: 2.8em;
   font-weight: normal;
+}
+
+/* SOCIALS ASIDE */
+#socials {
+  background-color: white;
+  border: 10px var(--primary);
+  border-style: solid solid solid none;
+  width: 90px;
+  height: 250px;
+  position: fixed;
+  top: calc(50vh - 125px);
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#socials:hover {
+  background-color: violet;
+}
+
+#socials img {
+  width: 60px;
 }
 
 /* HEADER */
@@ -83,7 +113,7 @@ h1 {
   list-style-type: none;
   text-align: center;
   margin: 0;
-  padding: 7px 0;
+  padding: 10px 0;
   overflow: hidden;
 }
 
@@ -93,10 +123,10 @@ h1 {
 
 #page-nav li a {
   color: white;
-  padding: 8px 30px;
+  padding: 11px 40px;
   text-align: center;
   text-decoration: none;
-  font-size: 1.1em;
+  text-transform: uppercase;
 }
 #page-nav li a:hover {
   background-color: var(--secondary);
