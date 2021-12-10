@@ -11,10 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
     <title>DAS Plumbing & Heating: Heating Engineer | Eastbourne</title>
   </head>
   <body>
-    <aside id="socials">
+    <!-- <aside id="socials">
       <a href="https://www.facebook.com/DASplumbingandHeating/" target="_blank">
         <img src="/img/facebook.png" alt="" />
       </a>
@@ -24,23 +25,51 @@
       <a href="mailto:dasplumbing@outlook.comm">
         <img src="/img/email.png" alt="" />
       </a>
-    </aside>
+    </aside> -->
+    <!-- <nav id="off-screen">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Plumbing</a></li>
+        <li><a href="#">Heating</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav> -->
+
+    <nav id="off-screen">
+      <div class="nav-body">
+        <ul class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Plumbing</a></li>
+          <li><a href="#">Heating</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <header id="page-header">
       <div class="container">
         <div class="left">
-          <img src="img/logo-temp.jpeg" alt="" width="300" />
+          <img class="logo" src="img/logo.png" alt="" width="280" />
         </div>
         <div class="right">
           <address>
-            <a href="tel:07843425796">MOBILE: 07843 425796</a>
+            <a class="call" href="tel:07843425796">MOBILE: 07843 425796</a>
             <p></p>
-            <a href="tel:01323655320">CALL: 01323 655320</a>
+            <a class="call" href="tel:01323655320">CALL: 01323 655320</a>
           </address>
-          <img src="img/gas-safe.jpg" alt="" width="150" />
+          <img src="img/gas-safe.jpg" alt="" width="100" />
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </div>
     </header>
+
+    <hr />
 
     <nav id="page-nav">
       <ul>
@@ -53,7 +82,7 @@
     </nav>
 
     <section id="showcase">
-      <div class="container-small">
+      <div class="container">
         <h1>Plumber and Heating Engineer in Eastbourne</h1>
         <p>
           DAS Plumbing & Heating has been established for 15+ years working in
@@ -155,5 +184,6 @@
     </section>
 
     <footer>this is my footer</footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
