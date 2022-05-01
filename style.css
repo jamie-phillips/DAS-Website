@@ -91,10 +91,6 @@ h1 {
   align-items: center;
 }
 
-#socials:hover {
-  background-color: violet;
-}
-
 #socials img {
   width: 60px;
 }
@@ -359,6 +355,51 @@ footer {
   background-color: var(--primary);
 }
 
+footer .container {
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left,
+footer .right {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+footer .left {
+  display: flex;
+  margin: 30px 0 0 30px;
+}
+
+footer .right {
+  text-align: right;
+  margin: 30px 30px 0 0;
+}
+
+footer .left div {
+  margin-right: 80px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer li a {
+  color: white;
+  font-size: smaller;
+}
+
+footer #flame-droplet {
+  width: 130px;
+}
+
+footer .img-link {
+  width: 50px;
+}
+
 /* MEDIA */
 
 @media only screen and (max-width: 1260px) {
@@ -391,32 +432,82 @@ footer {
   #off-screen {
     display: block;
   }
+
+  footer #flame-droplet {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 730px) {
   body {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   h1 {
     font-size: calc(2em + 2vw);
   }
 
+  input[type="button"],
+  button {
+    display: block;
+    width: 100%;
+  }
+
   #showcase {
     height: 400px;
-  }
-  #boxes .container {
-    display: block;
   }
 
   #boxes .box {
     padding: 10px;
   }
 
-  input[type="button"],
-  button {
+  #boxes .container,
+  #about .container {
     display: block;
+  }
+
+  #about .left,
+  #about .right {
     width: 100%;
+    padding: 0;
+  }
+
+  #about .right {
+    text-align: center;
+  }
+  #about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  footer .left,
+  footer .right {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  footer .container,
+  footer .left {
+    display: block;
+  }
+
+  footer .left,
+  footer .left div,
+  footer .right {
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    font-size: 15px;
   }
 }
 
