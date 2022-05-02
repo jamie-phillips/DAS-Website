@@ -263,7 +263,8 @@ h1 {
 
 /* SHOWCASE */
 #showcase {
-  background-image: url("/img/showcase_test.png");
+  background-color: black;
+  background-image: url("img/showcase_test.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% -100px;
