@@ -263,7 +263,7 @@ h1 {
 
 /* SHOWCASE */
 #showcase {
-  background-image: url("/img/showcase.jpg");
+  background-image: url("/img/showcase_test.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% -100px;
@@ -498,16 +498,27 @@ footer .img-link {
   }
 
   footer .left,
-  footer .left div,
-  footer .right {
+  footer .left div {
     text-align: left;
     margin: 0 0 10px 0;
   }
+
+  footer .right {
+    text-align: center;
+  }
+
+  footer .left ul {
+    columns: 3;
+  }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 450px) {
   body {
     font-size: 15px;
+  }
+
+  footer .left ul {
+    columns: 2;
   }
 }
 
