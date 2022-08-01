@@ -1,0 +1,22 @@
+{
+  "name": "das-website",
+  "version": "1.0.0",
+  "description": "Website for DAS Plumbing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamie-phillips/DAS-Website.git"
+  },
+  "author": "Jamie Phillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamie-phillips/DAS-Website/issues"
+  },
+  "homepage": "https://github.com/jamie-phillips/DAS-Website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
