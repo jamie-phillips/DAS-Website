@@ -7,10 +7,13 @@
   --dark-text: rgb(0, 0, 0);
 }
 
-body {
+* {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+}
+
+body {
   color: var(--light-text);
+  font-size: 18px;
 }
 
 body.no-scroll {
@@ -43,12 +46,15 @@ img {
 }
 
 hr {
-  border: 3px solid var(--primary);
+  border: none;
+  height: 6px;
+  background-color: var(--primary);
   display: none;
 }
 
+button,
 input[type="button"],
-button {
+input[type="submit"] {
   background-color: var(--secondary);
   border: none;
   color: var(--light-text);
@@ -60,8 +66,9 @@ button {
   cursor: pointer;
 }
 
+button:hover,
 input[type="button"]:hover,
-button:hover {
+input[type="submit"]:hover {
   background-color: var(--secondary-darker);
 }
 
@@ -264,7 +271,7 @@ h1 {
 /* SHOWCASE */
 #showcase {
   background-color: black;
-  background: url("img/showcase_test.png") 50% -10px;
+  background: url("../img/showcase_test.png") 50% -10px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -283,6 +290,16 @@ h1 {
 #showcase h1,
 #showcase p {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.63);
+}
+
+/* MAIN */
+#main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: black;
+  padding: 80px;
 }
 
 /* CONTACT US */
@@ -325,7 +342,7 @@ h1 {
 }
 #about .container {
   display: flex;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 #about .left,
@@ -346,6 +363,33 @@ h1 {
   width: 620px;
   height: 620px;
   object-fit: cover;
+}
+
+/* CONTACT FORM */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact-form > input,
+textarea {
+  margin-block: 3px;
+  font-size: medium;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* REVIEWS */
@@ -451,8 +495,9 @@ footer .img-link {
     font-size: calc(2em + 2vw);
   }
 
+  button,
   input[type="button"],
-  button {
+  input[type="submit"] {
     display: block;
     width: 100%;
   }
@@ -475,6 +520,7 @@ footer .img-link {
   #about .right {
     width: 100%;
     padding: 0;
+    margin-bottom: 30px;
   }
 
   #about .right {
