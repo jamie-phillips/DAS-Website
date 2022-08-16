@@ -40,6 +40,10 @@ hr {
   overflow: hidden;
 }
 
+#json {
+  display: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -80,6 +84,11 @@ a {
 h1 {
   font-size: 2.8em;
   font-weight: normal;
+}
+
+.white {
+  background-color: white !important;
+  color: var(--dark-text) !important;
 }
 
 /* SOCIALS ASIDE */
@@ -316,6 +325,11 @@ h1 {
   padding: 8px 20px;
 }
 
+#contact-us a {
+  color: white;
+  text-decoration: underline;
+}
+
 /* BOXES */
 #boxes {
   color: var(--dark-text);
@@ -337,32 +351,43 @@ h1 {
 }
 
 /* ABOUT */
-#about {
+.about {
   background-color: var(--dark);
 }
-#about .container {
+.about .container {
   display: flex;
   padding: 30px 0;
 }
 
-#about .left,
-#about .right {
+.about .left,
+.about .right {
   width: 50%;
 }
 
-#about .left {
+.about .left {
   padding-right: 20px;
 }
 
-#about h2,
-#about p {
+.about h1 {
+  font-size: 2.5rem;
+}
+
+.about h2,
+.about p {
   margin-bottom: 20px;
 }
 
-#about img {
+.about .single-img {
   width: 620px;
   height: 620px;
   object-fit: cover;
+}
+
+.about .dual-img {
+  width: 620px;
+  height: 350px;
+  object-fit: cover;
+  margin-block: 10px;
 }
 
 /* CONTACT FORM */
@@ -393,6 +418,10 @@ textarea {
 }
 
 /* REVIEWS */
+
+#review-scroller {
+  color: var(--dark-text);
+}
 
 /* FOOTER */
 footer {
@@ -512,24 +541,28 @@ footer .img-link {
   }
 
   #boxes .container,
-  #about .container {
+  .about .container {
     display: block;
   }
 
-  #about .left,
-  #about .right {
+  .about .left,
+  .about .right {
     width: 100%;
     padding: 0;
     margin-bottom: 30px;
   }
 
-  #about .right {
+  .about .right {
     text-align: center;
   }
-  #about img {
+  .about img {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+
+  .about .dual-img:last-of-type {
+    display: none;
   }
 
   footer .left,
